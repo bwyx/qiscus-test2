@@ -39,6 +39,36 @@
             DOWN ARROW: https://d1edrlpyc25xu0.cloudfront.net/hat-ppxmocchbbcbhopzk/image/upload/w_320,h_320,c_limit/rR-t7stGWr/down.png
             UP ARROW: https://d1edrlpyc25xu0.cloudfront.net/hat-ppxmocchbbcbhopzk/image/upload/w_320,h_320,c_limit/YdH9_StfiW/up.png
             */
+
+            /* set .box_inside one level children to right arrow if the parent .box is hovered */
+            .box:hover > .box_inside {
+                background-image: url(https://d1edrlpyc25xu0.cloudfront.net/hat-ppxmocchbbcbhopzk/image/upload/w_320,h_320,c_limit/DFrQ7vCgy2/right.png);
+            }
+ 
+            /* reset .box_inside to center if the element is hovered directly */
+            .box:hover > .box_inside:hover {
+                background-image: url(https://d1edrlpyc25xu0.cloudfront.net/hat-ppxmocchbbcbhopzk/image/upload/w_320,h_320,c_limit/DeNI4HaQvt/center.png);
+            }
+
+            /* set all descendants of hovered .box_inside to left arrow */
+            .box_inside:hover ~ .box_inside {
+                background-image: url(https://d1edrlpyc25xu0.cloudfront.net/hat-ppxmocchbbcbhopzk/image/upload/w_320,h_320,c_limit/4RQPxvmQRX/left.png);
+            }
+
+            /* -------------------
+            same, but horizontally with down and up arrows
+            ----------------------*/
+            .box2:hover > .box2_inside {
+                background-image: url(https://d1edrlpyc25xu0.cloudfront.net/hat-ppxmocchbbcbhopzk/image/upload/w_320,h_320,c_limit/rR-t7stGWr/down.png);
+            }
+ 
+            .box2:hover > .box2_inside:hover {
+                background-image: url(https://d1edrlpyc25xu0.cloudfront.net/hat-ppxmocchbbcbhopzk/image/upload/w_320,h_320,c_limit/DeNI4HaQvt/center.png);
+            }
+
+            .box2_inside:hover ~ .box2_inside {
+                background-image: url(https://d1edrlpyc25xu0.cloudfront.net/hat-ppxmocchbbcbhopzk/image/upload/w_320,h_320,c_limit/YdH9_StfiW/up.png);
+            }
         </style>
     </head>
     <body>
